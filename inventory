@@ -1,4 +1,5 @@
-[ubuntu18]172.16.128.163  ansible_user=pranavCtrl+C
+[ubuntu18]
+172.16.128.163  ansible_user=pranav
 
 
 
