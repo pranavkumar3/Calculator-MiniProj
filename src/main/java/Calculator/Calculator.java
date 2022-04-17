@@ -1,25 +1,34 @@
 package Calculator;
 
+import java.lang.Math;
 import static java.lang.System.exit;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+
     private double ans;
 
     public void square_root(double x) {
+        logger.info("Square root of "+x+"\t"+ Math.sqrt(x));
         this.ans = Math.sqrt(x);
     }
 
     public void factorial(double x) {
         this.ans = 1;
         for (int i = 1; i <= x; i++) this.ans *= i;
+        logger.info("Factorial of "+x+"\t"+ this.ans);
     }
 
     public void loge(double x) {
         this.ans = Math.log(x);
+        logger.info("Logarithm of "+x+"\t"+ Math.log(x));
     }
 
     public void power(double x, double y) {
         this.ans = Math.pow(x, y);
+        logger.info("Power of " + x +" raised to" + y + " is: " + Math.pow(x, y));
     }
 
     public double get_ans() {
