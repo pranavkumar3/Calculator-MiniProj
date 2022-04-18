@@ -10,24 +10,28 @@ public class Calculator {
     private double ans;
 
     public void square_root(double x) {
-        logger.info("Square root of "+x+"\t"+ Math.sqrt(x));
+//         logger.info("Square root of "+x+"\t"+ Math.sqrt(x));
+        logger.info("square root");
         this.ans = Math.sqrt(x);
     }
 
     public void factorial(double x) {
         this.ans = 1;
         for (int i = 1; i <= x; i++) this.ans *= i;
-        logger.info("Factorial of "+x+"\t"+ this.ans);
+//         logger.info("Factorial of "+x+"\t"+ this.ans);
+        logger.info("factorial");
     }
 
     public void loge(double x) {
         this.ans = Math.log(x);
-        logger.info("Logarithm of "+x+"\t"+ Math.log(x));
+//         logger.info("Logarithm of "+x+"\t"+ Math.log(x));
+         logger.info("loge");
     }
 
     public void power(double x, double y) {
         this.ans = Math.pow(x, y);
-        logger.info("Power of " + x +" raised to" + y + " is: " + Math.pow(x, y));
+//         logger.info("Power of " + x +" raised to" + y + " is: " + Math.pow(x, y));
+        logger.info("power");
     }
 
     public double get_ans() {
