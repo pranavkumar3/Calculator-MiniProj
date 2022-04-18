@@ -3,7 +3,7 @@ package Calculator;
 import org.junit.*;
 public class CalculatorTest {
     private Calculator calculator;
-
+    private static final double delta = 1e-15;
     @Before
     public void setup(){
         calculator = new Calculator();
