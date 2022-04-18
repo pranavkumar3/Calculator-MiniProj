@@ -3,3 +3,4 @@
 2022-04-18 13:49:31.228 [Calculator.java] INFO  Calculator.Calculator - Power of 5.0 raised to3.0 is: 125.0
 2022-04-18 13:49:31.230 [Calculator.java] INFO  Calculator.Calculator - Square root of 101.0	10.04987562112089
 2022-04-18 13:49:31.231 [Calculator.java] INFO  Calculator.Calculator - Factorial of 5.0	120.0
+2022-04-18 16:21:45.688 [Calculator.java] INFO  Calculator.Calculator - Factorial of 5.0	120.0
