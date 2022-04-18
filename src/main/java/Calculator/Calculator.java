@@ -7,7 +7,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public class Calculator {
     private static final Logger logger = LogManager.getLogger(Calculator.class);
-
     private double ans;
 
     public void square_root(double x) {
@@ -40,7 +39,7 @@ public class Calculator {
         int choice;
         double x, y;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("---------- !! Calculator Operations !! ----------");
+        System.out.println("---------- << Calculator  >>----------");
         while (true) {
             System.out.println("1. Square Root");
             System.out.println("2. Factorial");
