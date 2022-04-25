@@ -19,24 +19,6 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testfactorial(){
-        double num = 5;
-        double expected_result = 120;
-        calculator.factorial(num);
-        double result = calculator.get_ans();
-        Assert.assertEquals(expected_result, result, 0.00001);
-    }
-
-    @Test
-    public void loge(){
-        double num = 2.7;
-        double expected_result = Math.log(num);
-        calculator.loge(num);
-        double result = calculator.get_ans();
-        Assert.assertEquals(expected_result, result, 0.00001);
-    }
-
-    @Test
     public void power(){
         double base = 5;
         double power = 3;
@@ -45,6 +27,28 @@ public class CalculatorTest {
         double result = calculator.get_ans();
         Assert.assertEquals(expected_result, result, 0.00001);
     }
+    
+    
+    @Test
+    public void loge(){
+        double num = 2.7;
+        double expected_result = Math.log(num);
+        calculator.loge(num);
+        double result = calculator.get_ans();
+        Assert.assertEquals(expected_result, result, 0.00001);
+    }
+    
+    @Test
+    public void testfactorial(){
+        double num = 5;
+        double expected_result = 120;
+        calculator.factorial(num);
+        double result = calculator.get_ans();
+        Assert.assertEquals(expected_result, result, 0.00001);
+    }
+
+
+
 
 
 }
